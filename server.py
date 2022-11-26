@@ -37,7 +37,7 @@ for x in res:
   link = x
   indS = link.find(HEAD)
   indE = link.find('''</h3>\n'''.encode())
-  titles.append(link[indS+len(HEAD):indE])
+  titles.append(link[indS+len(HEAD):indE].decode('utf-8'))
 
 final = []
 for i in range(6):
